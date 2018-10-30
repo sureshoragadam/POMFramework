@@ -1,25 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-25T11:18:52 IST" name="test.java.Test99GuruLogin" finished-at="2018-10-25T11:19:15 IST" duration-ms="23789">
+  <suite started-at="2018-10-30T16:51:25 IST" name="test.java.Test99GuruLogin" finished-at="2018-10-30T16:52:23 IST" duration-ms="57491">
     <groups>
+      <group name="test4">
+        <method signature="Test99GuruLogin.test_Home_Page()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" name="test_Home_Page" class="test.java.Test99GuruLogin"/>
+      </group> <!-- test4 -->
+      <group name="test3">
+        <method signature="Test99GuruLogin.test_Login_Page()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" name="test_Login_Page" class="test.java.Test99GuruLogin"/>
+      </group> <!-- test3 -->
     </groups>
-    <test started-at="2018-10-25T11:18:52 IST" name="Command line test" finished-at="2018-10-25T11:19:15 IST" duration-ms="23789">
+    <test started-at="2018-10-30T16:51:25 IST" name="Command line test" finished-at="2018-10-30T16:52:23 IST" duration-ms="57491">
       <class name="test.java.Test99GuruLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.java.Test99GuruLogin@7fa98a66]" started-at="2018-10-25T11:18:52 IST" name="setup" finished-at="2018-10-25T11:19:10 IST" duration-ms="18598" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" started-at="2018-10-30T16:51:25 IST" name="setup" finished-at="2018-10-30T16:51:49 IST" duration-ms="23983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_Login_Page()[pri:0, instance:test.java.Test99GuruLogin@7fa98a66]" started-at="2018-10-25T11:19:10 IST" name="test_Login_Page" finished-at="2018-10-25T11:19:10 IST" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login_Page -->
-        <test-method signature="test_Home_Page()[pri:1, instance:test.java.Test99GuruLogin@7fa98a66]" started-at="2018-10-25T11:19:10 IST" name="test_Home_Page" finished-at="2018-10-25T11:19:13 IST" duration-ms="2459" status="PASS">
+        <test-method signature="test_Home_Page()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" started-at="2018-10-30T16:51:49 IST" name="test_Home_Page" finished-at="2018-10-30T16:52:20 IST" duration-ms="30085" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //table//tr[@class='heading3']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6DDHJJBU', ip: '100.108.17.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21288, moz:profile: C:\Users\suresh Babu\AppDat..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a8c109f4-b792-40a2-8a17-3751e921df96
+*** Element info: {Using=xpath, value=//table//tr[@class='heading3']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //table//tr[@class='heading3']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-6DDHJJBU', ip: '100.108.17.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21288, moz:profile: C:\Users\suresh Babu\AppDat..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a8c109f4-b792-40a2-8a17-3751e921df96
+*** Element info: {Using=xpath, value=//table//tr[@class='heading3']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at pages.Guru99homepage.getHomePageDashboardUserName(Guru99homepage.java:19)
+at test.java.Test99GuruLogin.test_Home_Page(Test99GuruLogin.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page -->
-        <test-method is-config="true" signature="close_instance()[pri:0, instance:test.java.Test99GuruLogin@7fa98a66]" started-at="2018-10-25T11:19:13 IST" name="close_instance" finished-at="2018-10-25T11:19:15 IST" duration-ms="2437" status="PASS">
+        <test-method signature="test_Login_Page()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" started-at="2018-10-30T16:52:20 IST" name="test_Login_Page" finished-at="2018-10-30T16:52:20 IST" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login_Page -->
+        <test-method is-config="true" signature="close_instance()[pri:0, instance:test.java.Test99GuruLogin@47af7f3d]" started-at="2018-10-30T16:52:20 IST" name="close_instance" finished-at="2018-10-30T16:52:23 IST" duration-ms="2464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_instance -->

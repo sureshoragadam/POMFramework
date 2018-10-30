@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="test.java.Test99GuruLogin" time="2.713" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="test.java.Test99GuruLogin" time="30.998" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="H:\QASelenium\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8183030830923293054.tmp"/>
+    <property name="classworlds.conf" value="H:\QASelenium\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf11338597307555918794.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\suresh Babu\Downloads\geckodriver-v0.23.0-win64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\curl_7_53_1_openssl_nghttp2_x64;C:\WINDOWS\System32\OpenSSH\;C:\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Users\suresh Babu\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="jdk.debug" value="release"/>
@@ -62,6 +62,59 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.java.Test99GuruLogin" name="test_Login_Page" time="0.257"/>
-  <testcase classname="test.java.Test99GuruLogin" name="test_Home_Page" time="2.456"/>
+  <testcase classname="test.java.Test99GuruLogin" name="test_Home_Page" time="30.096">
+    <failure message="Unable to locate element: //table//tr[@class=&apos;heading3&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-6DDHJJBU&apos;, ip: &apos;100.108.17.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21288, moz:profile: C:\Users\suresh Babu\AppDat..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a8c109f4-b792-40a2-8a17-3751e921df96
+*** Element info: {Using=xpath, value=//table//tr[@class=&apos;heading3&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //table//tr[@class=&apos;heading3&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-6DDHJJBU&apos;, ip: &apos;100.108.17.197&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21288, moz:profile: C:\Users\suresh Babu\AppDat..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a8c109f4-b792-40a2-8a17-3751e921df96
+*** Element info: {Using=xpath, value=//table//tr[@class=&apos;heading3&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at pages.Guru99homepage.getHomePageDashboardUserName(Guru99homepage.java:19)
+	at test.java.Test99GuruLogin.test_Home_Page(Test99GuruLogin.java:50)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6b57696f
+</system-out>
+    <system-err>1540898488849	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\SURESH~1\\AppData\\Local\\Temp\\rust_mozprofile.IRBF0wA6CEm2&quot;
+1540898496172	Marionette	INFO	Listening on port 59828
+1540898496561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540898499134	Marionette	DEBUG	[6442450945] Frame script loaded
+1540898499138	Marionette	DEBUG	[6442450945] Frame script registered
+Oct 30, 2018 4:51:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1540898499316	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1540898501383	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-1248015-24, line 76: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-1248015-24, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-1248015-24, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-1248015-24, line 129: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-1248015-24, line 76: unreachable code after return statement
+1540898503818	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://demo.guru99.com/V4/
+1540898506742	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1540898509920	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://demo.guru99.com/V4/
+</system-err>
+  </testcase>
+  <testcase classname="test.java.Test99GuruLogin" name="test_Login_Page" time="0.902"/>
 </testsuite>
