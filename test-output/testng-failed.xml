@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testng_smokesuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login_test(failed)">
+    <classes>
+      <class name="test.java.Test99GuruLogin">
+        <methods>
+          <include name="test_Home_Page"/>
+          <include name="close_instance"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.java.Test99GuruLogin -->
+    </classes>
+  </test> <!-- Login_test(failed) -->
+</suite> <!-- Failed suite [Testng_smokesuite] -->

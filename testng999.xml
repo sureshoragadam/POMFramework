@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Testng_smokesuite">
+<test name="Login_test">		
+	<classes>		
+		<class name="test.java.Test99GuruLogin"/>
+	</classes>
+</test>
+</suite>
